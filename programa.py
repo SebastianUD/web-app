@@ -28,7 +28,7 @@ class Estidante(db.Model):
 
 @app.route('/')
 def bienvenida():
-    return render_template("bienvenida.html", Estidante.query.all())
+    return render_template("bienvenida.html")
 
 with app.app_context():
     db.create_all()
